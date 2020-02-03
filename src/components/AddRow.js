@@ -1,10 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Button } from 'react-bootstrap';
 
 const AddRow = ({ addRowToList }) => (
-  <button type="button" onClick={addRowToList}>
-    Add Row
-  </button>
+  <Button onClick={addRowToList} variant="outline-primary" className="mb-3">Add Row</Button>
 );
 
 AddRow.propTypes = {

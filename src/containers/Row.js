@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import { updateRow, deleteRow, updateResults } from '../actions';
-import Row from '../components/Row';
+import RowItem from '../components/Row';
 
 const mapDispatchToProps = (dispatch) => ({
   updateRow: (id, row, quantity, operation, disable) => {
@@ -13,4 +13,4 @@ const mapDispatchToProps = (dispatch) => ({
   },
 });
 
-export default connect(null, mapDispatchToProps)(Row);
+export default connect(null, mapDispatchToProps)(RowItem);
